@@ -1,27 +1,26 @@
 package desafio_PwC;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Reverter {
 
 	public static void main(String[] args) {
 
-		String input[] = { " hello", " world", " OpenAI" };
+		Scanner sc = new Scanner(System.in);
+
+		String palavras[] = new String[5];
 		int j = 0;
 
-		for (int i = 0; i <= 2; i++) {
-			System.out.printf(input[j]);
+		for (int i = 0; i < palavras.length; i++) {
+			palavras[j] = sc.next();
 			j++;
 		}
-		j = 2;
-		System.out.println("");
-		for (int k = 0; k <= 2; k++) {
-			System.out.printf(input[j]);
-			j--;
-		}
+		System.out.printf(Arrays.toString(palavras));
+
+		sc.close();
 	}
 }
-
-//int[] something = { 0, 1, 2 ,3, };
-//System.out.println(something[2]);
 
 /*
  * 1. Reverta a ordem das palavras nas frases, mantendo a ordem das pelavras. a.
