@@ -6,7 +6,9 @@ public class Remover {
 		
 		String s = "Hello, World!";
 		
-		System.out.println(s);
+		for (int i = 0; i < s.length(); i++) {
+			System.out.println(s.charAt(i));
+		}
 	}
 }
 
