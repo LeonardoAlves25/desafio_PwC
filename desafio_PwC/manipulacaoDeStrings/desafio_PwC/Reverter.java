@@ -1,6 +1,5 @@
 package desafio_PwC;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Reverter {
@@ -9,15 +8,18 @@ public class Reverter {
 
 		Scanner sc = new Scanner(System.in);
 
+		System.out.println("Ola, digite a frase que deseja reverter a ordem:");
+
 		String palavras[] = new String[5];
-		int j = 0;
 
 		for (int i = 0; i < palavras.length; i++) {
-			palavras[j] = sc.next();
-			j++;
+			palavras[i] = sc.next();
 		}
-		System.out.printf(Arrays.toString(palavras));
-
+		
+		System.out.println("\nFrase invertida: ");
+		for (int i = 4; i >= 0; i--) {
+			System.out.printf(palavras[i] + " ");
+		}
 		sc.close();
 	}
 }
