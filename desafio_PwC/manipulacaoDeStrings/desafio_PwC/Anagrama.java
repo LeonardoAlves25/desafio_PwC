@@ -7,13 +7,13 @@ public class Anagrama {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Verifique se È anagrama de um palindromo");
+		System.out.println("Verifique se as palavras s„o anagramas");
 		
-		String input = "\nDigite a primeira palavra: " + sc.next();
-		String input2 = "\nDigite a segunda palavra: " + sc.next();
+		String input = sc.next();
+		String input2 = sc.next();
 		
-		if(isAnagrama(input, input2))System.out.println("\n… anagrama");
-		else System.out.println("\nN„o È anagrama");
+		if(isAnagrama(input, input2))System.out.println("… anagrama");
+		else System.out.println("N„o È anagrama");
 		
 		sc.close();
 	}
